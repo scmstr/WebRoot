@@ -1,18 +1,37 @@
 
-var request = new XMLHttpRequest();
-var data;
+
+// function search() {
+        
+//     var request = new XMLHttpRequest();
+//     //var data;
+//     var input = document.getElementById("search").textContent;
+
+//     request.open('GET', "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&input=" + input + "&key=AIzaSyB6TVzwO2st38aW8DznH6E9NCMIuawc-Bs");
+//     request.onload = function() {
+//         var response = request.response;
+//         var parsedData = JSON.parse(response);
+//         console.log(parsedData);
+//         //data = parsedData;
+//     }
+
+//     request.send();
+// }
 
 
-// request.open('GET', "https://hplussport.com/api/products");
-request.open('GET', "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&input=dominos&key=AIzaSyB6TVzwO2st38aW8DznH6E9NCMIuawc-Bs");
 
 
+document.getElementById("submitIt").addEventListener("click", function () {        
+    var request = new XMLHttpRequest();
+    //var data;
+    var input = document.getElementById("search").textContent;
 
-request.onload = function() {
-	var response = request.response;
-	var parsedData = JSON.parse(response);
-    console.log(parsedData);
-    data = parsedData;
-}
+    request.open('GET', "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&input=" + input + "&key=AIzaSyB6TVzwO2st38aW8DznH6E9NCMIuawc-Bs");
+    request.onload = function() {
+        var response = request.response;
+        var parsedData = JSON.parse(response);
+        console.log(parsedData);
+        //data = parsedData;
+    }
 
-request.send();
+    request.send();
+});
