@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta title="Testing Google Places API">
+        <meta name="keywords" content="Testing Google Places API" />
+        <meta name="description" content="Testing Google Places API" />
+        <meta name="author" content="McElroy, J.E." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+        <!-- external css -->
+        <link rel="stylesheet" href="../css/style.css"/> 
+
+        <!-- external js file -->
+        <script src="../js/placesTest.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid" style="background-color: tan;">
+            <br>
+            <h1>Testing Google Places API</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <h5>
+                                <strong>Search Input</strong>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div>
+                        <form action="placesTest.html">
+                            <label for="search">Search:</label>
+                            <input type="text" id="search" name="search"><br>
+                            <input type="submit" value="Submit" onclick="request.send()">
+                        </form> 
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <h5>
+                                <strong>Search Output</strong>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div>
+                        OUTPUT HERE
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <p>
+                <a href="../index.html">Back to <strong>Main...</strong></a> 
+            </p>
+
+            <br>
+        </div>
+
+
+    </body>
+</html>
+
